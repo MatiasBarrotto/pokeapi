@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah');
+@font-face{font-family: Poke; src: url(Poke_H.ttf)}
+@font-face{font-family: PokeS; src: url(Poke_S.ttf)}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #2b2b2b;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  height: 30vh;
+  background-image: url('../img/header1.jpeg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+header .main-title {
+  font-family: Poke;
+  color: snow;
+  font-size: 5rem;
+  text-align: left;
+}
+
+button{
+  width: 100px;
+  display: none;
+}
+
+#ante{
+  float: left; 
+  background: linear-gradient(to left, red 33%, black); 
+  color:white; 
+  font-weight: bold;
+}
+
+#next{
+  float: right; 
+  background: linear-gradient(to right, red 33%, black); 
+  color:white; 
+  font-weight: bold;
+}
+
+#listado {
+  padding: 1rem 4rem 1rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.pokemon {
+  flex: 0 0 250px;
+  text-align: center;
+}
+
+.pokemon div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#detalles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.data span{
+  font-weight: bold;
+}
+
+footer {
+  font-family: PokeS;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  background: url('../img/footer.webp');
+  color: black;
+  text-align: center;
+}
